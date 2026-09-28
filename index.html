@@ -4,6 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Americano</title>
+<meta name="description" content="Organizează turnee de padel Americano, clasic sau mixt: program, scoruri și clasament.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Americano">
+<meta property="og:title" content="Americano">
+<meta property="og:description" content="Turnee de padel Americano, clasic sau mixt: program, scoruri și clasament.">
+<meta property="og:url" content="https://costinrusu84.github.io/americano/">
+<meta property="og:image" content="https://costinrusu84.github.io/americano/og-image-2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Americano: rachetă de padel și minge pe fundal albastru">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://costinrusu84.github.io/americano/og-image-2.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
@@ -494,12 +506,12 @@ function viewHome(){
   let h = '';
   if(S.tour) h += `<div class="banner"><p>Turneul „${esc(S.tour.name)}” e în desfășurare. Formatul ales aici se aplică doar turneului următor.</p><div class="row"><button class="btn" data-action="view" data-v="rounds">Vezi programul</button></div></div>`;
   h = `<div class="hero">${logoArt()}</div>` + h + `<h2 class="home-title">Ce jucăm azi?</h2>
-  <button class="fmt-card" data-action="pick-format" data-v="mixed">
-    <span class="fmt-body"><span class="fmt-name">Americano mixt <span aria-hidden="true">→</span></span>
-    <span class="fmt-desc">Fiecare echipă e formată dintr-un băiat și o fată. Poți stabili și echipe fixe.</span></span></button>
   <button class="fmt-card" data-action="pick-format" data-v="open">
     <span class="fmt-body"><span class="fmt-name">Americano clasic <span aria-hidden="true">→</span></span>
     <span class="fmt-desc">Fiecare jucător face echipă o dată cu fiecare dintre ceilalți.</span></span></button>
+  <button class="fmt-card" data-action="pick-format" data-v="mixed">
+    <span class="fmt-body"><span class="fmt-name">Americano mixt <span aria-hidden="true">→</span></span>
+    <span class="fmt-desc">Fiecare echipă e formată dintr-un băiat și o fată. Poți stabili și echipe fixe.</span></span></button>
   <p class="muted small" style="text-align:center;margin-top:18px">Regulile complete sunt la butonul ? din dreapta sus.</p>`;
   return h;
 }
